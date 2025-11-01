@@ -1,0 +1,104 @@
+.about-container {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 20px;
+}
+.about-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.icon-box {
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  color: #fff;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 5px;
+}
+
+.app-version {
+  color: #888;
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin: 15px 0 10px;
+}
+
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.feature-list li {
+  position: relative;
+  margin: 8px 0;
+  color: #444;
+  font-size: 15px;
+  padding-left: 18px;
+}
+
+.feature-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #7b2ff7;
+  font-weight: bold;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.purple {
+  background-color: #f0e9ff;
+  color: #7b2ff7;
+}
+
+.violet {
+  background-color: #ede9ff;
+  color: #6b21a8;
+}
+
+.pink {
+  background-color: #fde7ed;
+  color: #e11d48;
+}
+
+.blue {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}

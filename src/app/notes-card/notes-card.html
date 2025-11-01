@@ -1,0 +1,27 @@
+<div class="note-card">
+  <div *ngIf="!isEditing" class="note-content">
+    <div class="note-header">
+      <h3 class="note-title">{{ note.title }}</h3>
+
+      <div class="action-buttons">
+        <button class="edit-btn" (click)="startEdit()">✎ Edit</button>
+        <button class="delete-btn" (click)="deleteNote()">🗑 Delete</button>
+      </div>
+    </div>
+    <p class="note-desc">{{ note.desc }}</p>
+  </div>
+
+  <!-- Edit mode -->
+  <div *ngIf="isEditing" class="edit-mode">
+    <div class="edit-actions">
+      <button class="cancel-link" (click)="cancelEdit()">✕ Cancel</button>
+      <button class="save-btn" (click)="saveEdit()">💾 Save Changes</button>
+    </div>
+    <input [(ngModel)]="editedTitle" placeholder="Title" class="input-box title-input" />
+    <textarea
+      [(ngModel)]="editedDesc"
+      placeholder="Description"
+      class="input-box desc-area"
+    ></textarea>
+  </div>
+</div>

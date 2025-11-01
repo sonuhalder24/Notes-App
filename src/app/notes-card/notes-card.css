@@ -1,0 +1,129 @@
+.card-style{
+    border: 1px solid black;
+}
+
+.note-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(24, 22, 22, 0.08);
+  margin: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.note-desc {
+  color: #555;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-link {
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.edit-btn {
+  background-color: #eef2ff;
+  color: #4338ca;
+}
+
+.edit-btn:hover {
+  background-color: #c7d2fe;
+}
+
+.delete-btn {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.delete-btn:hover {
+  background-color: #fecaca;
+}
+
+/* Input Fields */
+.input-box {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Save/Cancel */
+.edit-actions {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.save-btn {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.save-btn:hover {
+  background-color: #bfdbfe;
+}
+
+.cancel-link {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.cancel-link:hover {
+  background-color: #e5e7eb;
+}
+.title-input {
+  font-weight: 600;
+  font-size: 18px;
+}
+.desc-area {
+  min-height: 120px;
+  resize: vertical;
+}

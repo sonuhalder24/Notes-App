@@ -1,0 +1,81 @@
+.add-note-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.save-btn {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.note-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #444;
+}
+.title-input,
+.desc-input {
+  border: none;
+  outline: none;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 12px 15px;
+  font-size: 15px;
+  color: #444;
+}
+
+.title-input:focus,
+.desc-input:focus {
+  background: #ffffff;
+  border: 1px solid #d1b3ff;
+  box-shadow: 0 0 4px rgba(123, 47, 247, 0.3);
+}
+
+.desc-input {
+  height: 150px;
+  resize: none;
+}
+
+input.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
+
+input.ng-touched.ng-valid {
+  border: 1px solid green;
+}
+textarea.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
+
+textarea.ng-touched.ng-valid {
+  border: 1px solid green;
+}
+.error-text {
+  font-size: 13px;
+  color: #e11d48;
+}

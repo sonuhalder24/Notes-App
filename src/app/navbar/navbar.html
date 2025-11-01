@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a
+          routerLink="/allNotes"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item"><a routerLink="/addNotes" routerLinkActive="active">Add Note</a></li>
+      <li class="nav-item"><a routerLink="/about" routerLinkActive="active">About</a></li>
+    </ul>
+  </div>
+</nav>

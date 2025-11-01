@@ -1,0 +1,46 @@
+<div class="add-note-container">
+  <div class="top-bar">
+    <button class="save-btn" [disabled]="userForm.invalid" (click)="onSubmit(userForm)">
+      💾 Save Note
+    </button>
+  </div>
+
+  <form #userForm="ngForm" class="note-form" (ngSubmit)="onSubmit(userForm)">
+    <h2 class="note-title">Notes Title</h2>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      name="title"
+      [(ngModel)]="title"
+      required
+      placeholder="Enter your note title..."
+      class="title-input"
+      #titleRef="ngModel"
+    />
+    <!-- Validation Title Messages -->
+    <div *ngIf="titleRef.invalid && titleRef.touched">
+      <small *ngIf="titleRef.errors?.['required']" class="error-text">Title is required</small>
+    </div>
+
+    <textarea
+      type="text"
+      class="form-control"
+      id="desc"
+      name="desc"
+      [(ngModel)]="desc"
+      placeholder="Start writing your note..."
+      required
+      class="desc-input"
+      #descRef="ngModel"
+    ></textarea>
+    <!-- Validation Desc Messages -->
+    <div *ngIf="descRef.invalid && descRef.touched">
+      <small *ngIf="descRef.errors?.['required']" class="error-text">Description is required</small>
+    </div>
+
+    <!-- <button type="submit" [disabled]="userForm.invalid" class="btn btn-sm btn-primary">
+      Add Note
+    </button> -->
+  </form>
+</div>

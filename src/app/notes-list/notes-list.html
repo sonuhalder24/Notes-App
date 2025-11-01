@@ -1,0 +1,36 @@
+<!-- <div class="list-section">
+  <h3>Your Notes</h3> -->
+
+<div class="notes-container">
+  <!-- 🟣 Header Section -->
+  <div class="notes-header">
+    <div class="title-section">
+      <button class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <h2 class="app-title">My Notes</h2>
+    </div>
+    <button class="info-btn">ⓘ</button>
+  </div>
+
+  <!-- 🔍 Search box -->
+  <div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input
+      type="text"
+      placeholder="Search notes..."
+      [(ngModel)]="searchText"
+      class="search-input"
+    />
+  </div>
+  <div *ngIf="notes.length === 0; else elseBlock">
+    <h5>No Expense to display</h5>
+  </div>
+  <ng-template #elseBlock>
+    <div>
+      <app-notes-card *ngFor="let nt of notes | filter : searchText" [note]="nt"></app-notes-card>
+    </div>
+  </ng-template>
+</div>
